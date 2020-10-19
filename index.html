@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function bonjour(){
+                            var nom=prompt("Quel est ton nom de famille?");
+                            var prenom=prompt("Quel est ton prénom?");
+                            var nomComplet = `${prenom} ${nom}`;
+                            document.write(`Bonjour ${nomComplet} <br/><br/>`);
+                        };
+            //bonjour("Bossé", "Paul");
+            //bonjour("Ouelette", "Ginette");
+            //Question 3
+            function calculatrice(){
+                            var nombre1=parseFloat(prompt("Quel est le premier chiffre"));
+                            var nombre2=parseFloat(prompt("Quel est le deuxième chiffre"));
+                            document.write(`Les résultats: <br/>\
+           ${nombre1} + ${nombre2} = ${(nombre1+nombre2).toFixed(6)} <br/> \
+           ${nombre1} - ${nombre2} = ${(nombre1-nombre2).toFixed(6)} <br/> \
+           ${nombre1} * ${nombre2} = ${(nombre1*nombre2).toFixed(6)} <br/> \
+           ${nombre1} / ${nombre2} = ${(nombre1/nombre2).toFixed(6)} `);
+                        };
+            calculatrice();
+        </script>
+    </body>
+</html>
